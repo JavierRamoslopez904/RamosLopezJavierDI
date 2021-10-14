@@ -43,6 +43,7 @@ public class LegoKarate extends javax.swing.JFrame {
         fourthPanel = new javax.swing.JPanel();
         fourthutton = new javax.swing.JButton();
         fourthutton1 = new javax.swing.JButton();
+        fifthButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -100,6 +101,7 @@ public class LegoKarate extends javax.swing.JFrame {
                 fourthuttonActionPerformed(evt);
             }
         });
+        fourthPanel.add(fourthutton);
 
         fourthutton1.setBackground(new java.awt.Color(51, 255, 0));
         fourthutton1.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
@@ -110,31 +112,18 @@ public class LegoKarate extends javax.swing.JFrame {
                 fourthutton1ActionPerformed(evt);
             }
         });
+        fourthPanel.add(fourthutton1);
 
-        javax.swing.GroupLayout fourthPanelLayout = new javax.swing.GroupLayout(fourthPanel);
-        fourthPanel.setLayout(fourthPanelLayout);
-        fourthPanelLayout.setHorizontalGroup(
-            fourthPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(fourthPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(fourthPanelLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(fourthutton)
-                    .addGap(5, 5, 5)
-                    .addComponent(fourthutton1)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        fourthPanelLayout.setVerticalGroup(
-            fourthPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 52, Short.MAX_VALUE)
-            .addGroup(fourthPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(fourthPanelLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addGroup(fourthPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(fourthutton)
-                        .addComponent(fourthutton1))
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
+        fifthButton.setBackground(new java.awt.Color(255, 0, 0));
+        fifthButton.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        fifthButton.setForeground(new java.awt.Color(0, 0, 0));
+        fifthButton.setText(org.openide.util.NbBundle.getMessage(LegoKarate.class, "Vendido.fifthButton.text")); // NOI18N
+        fifthButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fifthButtonActionPerformed(evt);
+            }
+        });
+        fourthPanel.add(fifthButton);
 
         javax.swing.GroupLayout firstPanelLayout = new javax.swing.GroupLayout(firstPanel);
         firstPanel.setLayout(firstPanelLayout);
@@ -214,6 +203,11 @@ public class LegoKarate extends javax.swing.JFrame {
         
     }//GEN-LAST:event_fourthuttonMouseClicked
 
+    private void fifthButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fifthButtonActionPerformed
+
+        System.exit(0);
+    }//GEN-LAST:event_fifthButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -250,6 +244,7 @@ public class LegoKarate extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton fifthButton;
     private javax.swing.JLabel fifthLabel;
     private javax.swing.JLabel firstLabel1;
     private javax.swing.JPanel firstPanel;

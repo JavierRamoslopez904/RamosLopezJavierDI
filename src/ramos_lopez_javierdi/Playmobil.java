@@ -48,6 +48,7 @@ public class Playmobil extends javax.swing.JDialog {
         eigthButton1 = new javax.swing.JButton();
         fifthPanel1 = new javax.swing.JPanel();
         tenthButton = new javax.swing.JButton();
+        tenthButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -147,6 +148,17 @@ public class Playmobil extends javax.swing.JDialog {
             }
         });
         fifthPanel1.add(tenthButton);
+
+        tenthButton1.setBackground(new java.awt.Color(255, 0, 0));
+        tenthButton1.setFont(new java.awt.Font("Source Sans Pro Black", 1, 24)); // NOI18N
+        tenthButton1.setForeground(new java.awt.Color(0, 0, 102));
+        tenthButton1.setText("CERRAR");
+        tenthButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tenthButton1ActionPerformed(evt);
+            }
+        });
+        fifthPanel1.add(tenthButton1);
 
         javax.swing.GroupLayout firstPanel1Layout = new javax.swing.GroupLayout(firstPanel1);
         firstPanel1.setLayout(firstPanel1Layout);
@@ -285,6 +297,12 @@ public class Playmobil extends javax.swing.JDialog {
         
     }//GEN-LAST:event_eigthButton1MouseClicked
 
+    private void tenthButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tenthButton1ActionPerformed
+       
+        System.exit(0);
+        
+    }//GEN-LAST:event_tenthButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -341,6 +359,7 @@ public class Playmobil extends javax.swing.JDialog {
     private javax.swing.JButton seventhButton1;
     private javax.swing.JLabel sixthLabel1;
     private javax.swing.JButton tenthButton;
+    private javax.swing.JButton tenthButton1;
     private javax.swing.JLabel thirdLabel1;
     private javax.swing.JPanel thirdPanel1;
     // End of variables declaration//GEN-END:variables

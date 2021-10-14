@@ -36,12 +36,15 @@ public class BobEsponja extends javax.swing.JFrame {
         firstLabel1 = new javax.swing.JLabel();
         secondLabel1 = new javax.swing.JLabel();
         thirdPanel = new javax.swing.JPanel();
-        fourthLabel = new javax.swing.JLabel();
-        fifthLabel = new javax.swing.JLabel();
-        sixthLabel = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         fourthPanel = new javax.swing.JPanel();
         fourthutton = new javax.swing.JButton();
         fourthutton1 = new javax.swing.JButton();
+        fifthButton = new javax.swing.JButton();
+        fifthPanel = new javax.swing.JPanel();
+        thirdLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -61,23 +64,23 @@ public class BobEsponja extends javax.swing.JFrame {
         thirdPanel.setBackground(new java.awt.Color(255, 255, 0));
         thirdPanel.setLayout(new java.awt.GridLayout(4, 1));
 
-        fourthLabel.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
-        fourthLabel.setForeground(new java.awt.Color(0, 0, 102));
-        fourthLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        fourthLabel.setText("PRECIO : 93.99€");
-        thirdPanel.add(fourthLabel);
+        jLabel1.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 153));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("PRECIO : 43.99€");
+        thirdPanel.add(jLabel1);
 
-        fifthLabel.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
-        fifthLabel.setForeground(new java.awt.Color(0, 0, 102));
-        fifthLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        fifthLabel.setText("DESCRIPCIÓN : Figura de Bob Esponja");
-        thirdPanel.add(fifthLabel);
+        jLabel2.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 153));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("DESCRIPCIÓN : Juguete Bob Esponja");
+        thirdPanel.add(jLabel2);
 
-        sixthLabel.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
-        sixthLabel.setForeground(new java.awt.Color(0, 0, 102));
-        sixthLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        sixthLabel.setText("UNIDADES : 4");
-        thirdPanel.add(sixthLabel);
+        jLabel3.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 153));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("UNIDADES : 4");
+        thirdPanel.add(jLabel3);
 
         fourthPanel.setBackground(new java.awt.Color(255, 255, 0));
 
@@ -108,26 +111,45 @@ public class BobEsponja extends javax.swing.JFrame {
         });
         fourthPanel.add(fourthutton1);
 
+        fifthButton.setBackground(new java.awt.Color(255, 0, 0));
+        fifthButton.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        fifthButton.setForeground(new java.awt.Color(0, 0, 0));
+        fifthButton.setText(org.openide.util.NbBundle.getMessage(BobEsponja.class, "Vendido.fifthButton.text")); // NOI18N
+        fifthButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fifthButtonActionPerformed(evt);
+            }
+        });
+        fourthPanel.add(fifthButton);
+
+        fifthPanel.setBackground(new java.awt.Color(255, 255, 0));
+
+        thirdLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/bobito-removebg-preview (2).png"))); // NOI18N
+        fifthPanel.add(thirdLabel);
+
         javax.swing.GroupLayout firstPanelLayout = new javax.swing.GroupLayout(firstPanel);
         firstPanel.setLayout(firstPanelLayout);
         firstPanelLayout.setHorizontalGroup(
             firstPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, firstPanelLayout.createSequentialGroup()
+            .addGroup(firstPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(firstPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(fourthPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(thirdPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(secondPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(firstPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(fifthPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(fourthPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(thirdPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 873, Short.MAX_VALUE)
+                    .addComponent(secondPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addContainerGap())
         );
         firstPanelLayout.setVerticalGroup(
             firstPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(firstPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(secondPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(secondPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(fifthPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(thirdPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(thirdPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, Short.MAX_VALUE)
                 .addComponent(fourthPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -190,6 +212,12 @@ public class BobEsponja extends javax.swing.JFrame {
         
     }//GEN-LAST:event_fourthuttonMouseClicked
 
+    private void fifthButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fifthButtonActionPerformed
+
+        System.exit(0);
+
+    }//GEN-LAST:event_fifthButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -226,16 +254,19 @@ public class BobEsponja extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel fifthLabel;
+    private javax.swing.JButton fifthButton;
+    private javax.swing.JPanel fifthPanel;
     private javax.swing.JLabel firstLabel1;
     private javax.swing.JPanel firstPanel;
-    private javax.swing.JLabel fourthLabel;
     private javax.swing.JPanel fourthPanel;
     private javax.swing.JButton fourthutton;
     private javax.swing.JButton fourthutton1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel secondLabel1;
     private javax.swing.JPanel secondPanel;
-    private javax.swing.JLabel sixthLabel;
+    private javax.swing.JLabel thirdLabel;
     private javax.swing.JPanel thirdPanel;
     // End of variables declaration//GEN-END:variables
 }

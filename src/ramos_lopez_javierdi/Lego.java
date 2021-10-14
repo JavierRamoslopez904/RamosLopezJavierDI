@@ -47,6 +47,7 @@ public class Lego extends javax.swing.JDialog {
         jButton3 = new javax.swing.JButton();
         fifthPanel = new javax.swing.JPanel();
         fourthutton = new javax.swing.JButton();
+        fifthButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -145,6 +146,17 @@ public class Lego extends javax.swing.JDialog {
             }
         });
         fifthPanel.add(fourthutton);
+
+        fifthButton.setBackground(new java.awt.Color(255, 0, 0));
+        fifthButton.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        fifthButton.setForeground(new java.awt.Color(0, 0, 0));
+        fifthButton.setText(org.openide.util.NbBundle.getMessage(Lego.class, "Vendido.fifthButton.text")); // NOI18N
+        fifthButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fifthButtonActionPerformed(evt);
+            }
+        });
+        fifthPanel.add(fifthButton);
 
         javax.swing.GroupLayout firstPanelLayout = new javax.swing.GroupLayout(firstPanel);
         firstPanel.setLayout(firstPanelLayout);
@@ -282,6 +294,11 @@ public class Lego extends javax.swing.JDialog {
         
     }//GEN-LAST:event_jButton3MouseClicked
 
+    private void fifthButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fifthButtonActionPerformed
+
+        System.exit(0);
+    }//GEN-LAST:event_fifthButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -325,6 +342,7 @@ public class Lego extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton fifthButton;
     private javax.swing.JPanel fifthPanel;
     private javax.swing.JLabel firstLabel;
     private javax.swing.JLabel firstLabel1;
