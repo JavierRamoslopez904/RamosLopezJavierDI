@@ -53,6 +53,7 @@ public class Vendido extends javax.swing.JDialog {
         firstCombo = new javax.swing.JComboBox<>();
         fourthPanel = new javax.swing.JPanel();
         fourthutton = new javax.swing.JButton();
+        fifthButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -103,6 +104,17 @@ public class Vendido extends javax.swing.JDialog {
             }
         });
         fourthPanel.add(fourthutton);
+
+        fifthButton.setBackground(new java.awt.Color(255, 0, 0));
+        fifthButton.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        fifthButton.setForeground(new java.awt.Color(0, 0, 0));
+        fifthButton.setText(org.openide.util.NbBundle.getMessage(Vendido.class, "Vendido.fifthButton.text")); // NOI18N
+        fifthButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fifthButtonActionPerformed(evt);
+            }
+        });
+        fourthPanel.add(fifthButton);
 
         javax.swing.GroupLayout firstPanelLayout = new javax.swing.GroupLayout(firstPanel);
         firstPanel.setLayout(firstPanelLayout);
@@ -254,6 +266,16 @@ public class Vendido extends javax.swing.JDialog {
     }//GEN-LAST:event_firstComboActionPerformed
 
     /**
+     * Método para cerrar la aplicación
+     * @param evt 
+     */
+    private void fifthButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fifthButtonActionPerformed
+        
+        System.exit(0);
+        
+    }//GEN-LAST:event_fifthButtonActionPerformed
+
+    /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
@@ -296,6 +318,7 @@ public class Vendido extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton fifthButton;
     private javax.swing.JComboBox<String> firstCombo;
     private javax.swing.JLabel firstLabel;
     private javax.swing.JLabel firstLabel1;

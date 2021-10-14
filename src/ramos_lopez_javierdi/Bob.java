@@ -217,10 +217,10 @@ public class Bob extends javax.swing.JDialog {
      */
     private void firstButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstButtonActionPerformed
         
-        BobEsponja be = new BobEsponja();
-        
-        this.setVisible(false);
-        be.setVisible(true);
+       BobEsponja be = new BobEsponja();
+       
+       this.setVisible(false);
+       be.setVisible(true);
         
     }//GEN-LAST:event_firstButtonActionPerformed
 
@@ -329,6 +329,7 @@ public class Bob extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton fifthButton;
     private javax.swing.JPanel fifthPanel;
     private javax.swing.JButton firstButton;
     private javax.swing.JLabel firstLabel1;
