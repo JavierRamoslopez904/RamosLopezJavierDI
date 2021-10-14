@@ -36,7 +36,6 @@ public class BobEsponja extends javax.swing.JFrame {
         firstLabel1 = new javax.swing.JLabel();
         secondLabel1 = new javax.swing.JLabel();
         thirdPanel = new javax.swing.JPanel();
-        thirdLabel = new javax.swing.JLabel();
         fourthLabel = new javax.swing.JLabel();
         fifthLabel = new javax.swing.JLabel();
         sixthLabel = new javax.swing.JLabel();
@@ -61,10 +60,6 @@ public class BobEsponja extends javax.swing.JFrame {
 
         thirdPanel.setBackground(new java.awt.Color(255, 255, 0));
         thirdPanel.setLayout(new java.awt.GridLayout(4, 1));
-
-        thirdLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        thirdLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/bob__2_-removebg-preview.png"))); // NOI18N
-        thirdPanel.add(thirdLabel);
 
         fourthLabel.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
         fourthLabel.setForeground(new java.awt.Color(0, 0, 102));
@@ -241,7 +236,6 @@ public class BobEsponja extends javax.swing.JFrame {
     private javax.swing.JLabel secondLabel1;
     private javax.swing.JPanel secondPanel;
     private javax.swing.JLabel sixthLabel;
-    private javax.swing.JLabel thirdLabel;
     private javax.swing.JPanel thirdPanel;
     // End of variables declaration//GEN-END:variables
 }

@@ -40,7 +40,7 @@ public class Bob extends javax.swing.JDialog {
         thirdLabel1 = new javax.swing.JLabel();
         fourthPanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        firstButton = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         secondLabel = new javax.swing.JLabel();
         secondButton = new javax.swing.JButton();
         thirdLabel = new javax.swing.JLabel();
@@ -79,21 +79,16 @@ public class Bob extends javax.swing.JDialog {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/bobito-removebg-preview (2).png"))); // NOI18N
         fourthPanel.add(jLabel1);
 
-        firstButton.setBackground(new java.awt.Color(255, 255, 255));
-        firstButton.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
-        firstButton.setForeground(new java.awt.Color(0, 0, 102));
-        firstButton.setText("¡COMPRAR YA!");
-        firstButton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                firstButtonMouseClicked(evt);
-            }
-        });
-        firstButton.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setBackground(new java.awt.Color(255, 255, 255));
+        jButton1.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 102));
+        jButton1.setText("¡COMPRAR YA!");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                firstButtonActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
-        fourthPanel.add(firstButton);
+        fourthPanel.add(jButton1);
 
         secondLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         secondLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/pat (1).png"))); // NOI18N
@@ -212,19 +207,6 @@ public class Bob extends javax.swing.JDialog {
     }//GEN-LAST:event_fourthuttonActionPerformed
 
     /**
-     * Método que accederá a la clase donde se realiza la compra de Bob Esponja
-     * @param evt 
-     */
-    private void firstButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstButtonActionPerformed
-        
-       BobEsponja be = new BobEsponja();
-       
-       this.setVisible(false);
-       be.setVisible(true);
-        
-    }//GEN-LAST:event_firstButtonActionPerformed
-
-    /**
      * Método que accederá a la clase donde se realiza la compra de Patricio
      * @param evt 
      */
@@ -254,18 +236,6 @@ public class Bob extends javax.swing.JDialog {
      * Método que contendrá el sonido cuando clickemos sobre el botón de comprar
      * @param evt 
      */
-    private void firstButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_firstButtonMouseClicked
-        
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/aparicion.wav"));
-        Sound.play();
-        
-    }//GEN-LAST:event_firstButtonMouseClicked
-
-    /**
-     * Método que contendrá el sonido cuando clickemos sobre el botón de comprar
-     * @param evt 
-     */
     private void secondButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_secondButtonMouseClicked
         
         AudioClip Sound;
@@ -285,6 +255,14 @@ public class Bob extends javax.swing.JDialog {
         Sound.play();
         
     }//GEN-LAST:event_thirdButtonMouseClicked
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+       BobEsponja be = new BobEsponja();
+       
+       this.setVisible(false);
+       be.setVisible(true);
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -331,11 +309,11 @@ public class Bob extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton fifthButton;
     private javax.swing.JPanel fifthPanel;
-    private javax.swing.JButton firstButton;
     private javax.swing.JLabel firstLabel1;
     private javax.swing.JPanel firstPanel;
     private javax.swing.JPanel fourthPanel;
     private javax.swing.JButton fourthutton;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JButton secondButton;
     private javax.swing.JLabel secondLabel;
