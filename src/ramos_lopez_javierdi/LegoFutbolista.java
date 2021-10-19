@@ -41,7 +41,7 @@ public class LegoFutbolista extends javax.swing.JFrame {
         fifthLabel = new javax.swing.JLabel();
         sixthLabel = new javax.swing.JLabel();
         fourthPanel = new javax.swing.JPanel();
-        fourthutton = new javax.swing.JButton();
+        compraBoton = new javax.swing.JButton();
         fourthutton1 = new javax.swing.JButton();
         fifthButton = new javax.swing.JButton();
 
@@ -67,41 +67,36 @@ public class LegoFutbolista extends javax.swing.JFrame {
         thirdLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Messi (2) (1).png"))); // NOI18N
         thirdPanel.add(thirdLabel);
 
-        fourthLabel.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        fourthLabel.setFont(new java.awt.Font("Source Code Pro Black", 1, 48)); // NOI18N
         fourthLabel.setForeground(new java.awt.Color(0, 0, 102));
         fourthLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         fourthLabel.setText("PRECIO : 24.99€");
         thirdPanel.add(fourthLabel);
 
-        fifthLabel.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        fifthLabel.setFont(new java.awt.Font("Source Code Pro Black", 1, 48)); // NOI18N
         fifthLabel.setForeground(new java.awt.Color(0, 0, 102));
         fifthLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         fifthLabel.setText("DESCRIPCIÓN : Futbolista ");
         thirdPanel.add(fifthLabel);
 
-        sixthLabel.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        sixthLabel.setFont(new java.awt.Font("Source Code Pro Black", 1, 48)); // NOI18N
         sixthLabel.setForeground(new java.awt.Color(0, 0, 102));
         sixthLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        sixthLabel.setText("UNIDADES : 1");
+        sixthLabel.setText("Nombre : Lego Futbolista");
         thirdPanel.add(sixthLabel);
 
         fourthPanel.setBackground(new java.awt.Color(255, 255, 0));
 
-        fourthutton.setBackground(new java.awt.Color(51, 255, 0));
-        fourthutton.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
-        fourthutton.setForeground(new java.awt.Color(0, 0, 102));
-        fourthutton.setText("COMPRAR");
-        fourthutton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                fourthuttonMouseClicked(evt);
-            }
-        });
-        fourthutton.addActionListener(new java.awt.event.ActionListener() {
+        compraBoton.setBackground(new java.awt.Color(51, 255, 0));
+        compraBoton.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        compraBoton.setForeground(new java.awt.Color(0, 0, 102));
+        compraBoton.setText("COMPRAR");
+        compraBoton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fourthuttonActionPerformed(evt);
+                compraBotonActionPerformed(evt);
             }
         });
-        fourthPanel.add(fourthutton);
+        fourthPanel.add(compraBoton);
 
         fourthutton1.setBackground(new java.awt.Color(51, 255, 0));
         fourthutton1.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
@@ -129,13 +124,13 @@ public class LegoFutbolista extends javax.swing.JFrame {
         firstPanel.setLayout(firstPanelLayout);
         firstPanelLayout.setHorizontalGroup(
             firstPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, firstPanelLayout.createSequentialGroup()
+            .addGroup(firstPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(firstPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(fourthPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(thirdPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(secondPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(firstPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(thirdPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(secondPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
+            .addComponent(fourthPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         firstPanelLayout.setVerticalGroup(
             firstPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -143,10 +138,10 @@ public class LegoFutbolista extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(secondPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(thirdPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 698, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(fourthPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(thirdPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 733, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(fourthPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -169,19 +164,6 @@ public class LegoFutbolista extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * Método que contiene un evento que nos llevará al formulario para realizar la compra
-     * @param evt 
-     */
-    private void fourthuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fourthuttonActionPerformed
-
-        Formulario f = new Formulario();
-        
-        this.setVisible(false);
-        f.setVisible(true);
-        
-    }//GEN-LAST:event_fourthuttonActionPerformed
-
     private void fourthutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fourthutton1ActionPerformed
 
         Lego l = new Lego(this,true);
@@ -191,22 +173,17 @@ public class LegoFutbolista extends javax.swing.JFrame {
         
     }//GEN-LAST:event_fourthutton1ActionPerformed
 
-    /**
-     * Método que contendrá el sonido cuando clickemos sobre el botón de comprar
-     * @param evt 
-     */
-    private void fourthuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fourthuttonMouseClicked
-        
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/DINERO.wav"));
-        Sound.play();
-        
-    }//GEN-LAST:event_fourthuttonMouseClicked
-
     private void fifthButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fifthButtonActionPerformed
 
         System.exit(0);
     }//GEN-LAST:event_fifthButtonActionPerformed
+
+    private void compraBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_compraBotonActionPerformed
+
+        Formulario f = new Formulario();
+        this.setVisible(false);
+        f.setVisible(true);
+    }//GEN-LAST:event_compraBotonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -244,13 +221,13 @@ public class LegoFutbolista extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton compraBoton;
     private javax.swing.JButton fifthButton;
     private javax.swing.JLabel fifthLabel;
     private javax.swing.JLabel firstLabel1;
     private javax.swing.JPanel firstPanel;
     private javax.swing.JLabel fourthLabel;
     private javax.swing.JPanel fourthPanel;
-    private javax.swing.JButton fourthutton;
     private javax.swing.JButton fourthutton1;
     private javax.swing.JLabel secondLabel1;
     private javax.swing.JPanel secondPanel;

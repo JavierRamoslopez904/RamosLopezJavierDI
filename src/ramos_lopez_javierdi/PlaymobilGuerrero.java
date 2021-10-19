@@ -6,6 +6,7 @@
 package ramos_lopez_javierdi;
 
 import java.applet.AudioClip;
+import javax.swing.JScrollPane;
 
 /**
  *
@@ -13,6 +14,8 @@ import java.applet.AudioClip;
  */
 public class PlaymobilGuerrero extends javax.swing.JFrame {
 
+    JScrollPane scrollPane;
+    
     /**
      * Creates new form PlaymobilGuerrero
      */
@@ -36,13 +39,15 @@ public class PlaymobilGuerrero extends javax.swing.JFrame {
         fourthPanel = new javax.swing.JPanel();
         firstLabel1 = new javax.swing.JLabel();
         secondLabel1 = new javax.swing.JLabel();
-        thirdPanel = new javax.swing.JPanel();
-        thirdLabel = new javax.swing.JLabel();
+        thridPanel = new javax.swing.JPanel();
+        thirdPanel1 = new javax.swing.JPanel();
+        firstLabel = new javax.swing.JLabel();
+        thirdPanel2 = new javax.swing.JPanel();
         fourthLabel = new javax.swing.JLabel();
-        fifthLabel = new javax.swing.JLabel();
-        sixthLabel = new javax.swing.JLabel();
+        thirdLabel = new javax.swing.JLabel();
+        secondLabel = new javax.swing.JLabel();
         fourtpanel = new javax.swing.JPanel();
-        fourthutton = new javax.swing.JButton();
+        compraBoton = new javax.swing.JButton();
         fourthutton1 = new javax.swing.JButton();
         fifthButton = new javax.swing.JButton();
 
@@ -64,48 +69,67 @@ public class PlaymobilGuerrero extends javax.swing.JFrame {
         secondLabel1.setText("JUGUETERÍA TOBOGÁN");
         secondPanel.add(secondLabel1);
 
-        thirdPanel.setBackground(new java.awt.Color(255, 255, 0));
-        thirdPanel.setLayout(new java.awt.GridLayout(4, 1));
+        thridPanel.setBackground(new java.awt.Color(255, 255, 0));
 
-        thirdLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        thirdLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/romanuco-removebg-preview (1).png"))); // NOI18N
-        thirdPanel.add(thirdLabel);
+        thirdPanel1.setBackground(new java.awt.Color(255, 255, 0));
 
-        fourthLabel.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        firstLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        firstLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/romanuco-removebg-preview (1) (1).png"))); // NOI18N
+        thirdPanel1.add(firstLabel);
+
+        thirdPanel2.setBackground(new java.awt.Color(255, 255, 0));
+        thirdPanel2.setLayout(new java.awt.GridLayout(3, 1));
+
+        fourthLabel.setFont(new java.awt.Font("Source Code Pro Black", 1, 48)); // NOI18N
         fourthLabel.setForeground(new java.awt.Color(0, 0, 102));
         fourthLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        fourthLabel.setText("PRECIO : 13.99€");
-        thirdPanel.add(fourthLabel);
+        fourthLabel.setText("Precio : 43.88€");
+        thirdPanel2.add(fourthLabel);
 
-        fifthLabel.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
-        fifthLabel.setForeground(new java.awt.Color(0, 0, 102));
-        fifthLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        fifthLabel.setText("DESCRIPCIÓN : Guerrero persa");
-        thirdPanel.add(fifthLabel);
+        thirdLabel.setFont(new java.awt.Font("Source Code Pro Black", 1, 48)); // NOI18N
+        thirdLabel.setForeground(new java.awt.Color(0, 0, 102));
+        thirdLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        thirdLabel.setText("Descripción : Guerrero Persa ");
+        thirdPanel2.add(thirdLabel);
 
-        sixthLabel.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
-        sixthLabel.setForeground(new java.awt.Color(0, 0, 102));
-        sixthLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        sixthLabel.setText("UNIDADES : 1");
-        thirdPanel.add(sixthLabel);
+        secondLabel.setFont(new java.awt.Font("Source Code Pro Black", 1, 48)); // NOI18N
+        secondLabel.setForeground(new java.awt.Color(0, 0, 102));
+        secondLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        secondLabel.setText("Nombre: Playmobil Guerrero");
+        thirdPanel2.add(secondLabel);
+
+        javax.swing.GroupLayout thridPanelLayout = new javax.swing.GroupLayout(thridPanel);
+        thridPanel.setLayout(thridPanelLayout);
+        thridPanelLayout.setHorizontalGroup(
+            thridPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, thridPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(thridPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(thirdPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 933, Short.MAX_VALUE)
+                    .addComponent(thirdPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        thridPanelLayout.setVerticalGroup(
+            thridPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(thridPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(thirdPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(thirdPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 327, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         fourtpanel.setBackground(new java.awt.Color(255, 255, 0));
 
-        fourthutton.setBackground(new java.awt.Color(51, 255, 0));
-        fourthutton.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
-        fourthutton.setForeground(new java.awt.Color(0, 0, 102));
-        fourthutton.setText("COMPRAR");
-        fourthutton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                fourthuttonMouseClicked(evt);
-            }
-        });
-        fourthutton.addActionListener(new java.awt.event.ActionListener() {
+        compraBoton.setBackground(new java.awt.Color(51, 255, 0));
+        compraBoton.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        compraBoton.setForeground(new java.awt.Color(0, 0, 102));
+        compraBoton.setText("COMPRAR");
+        compraBoton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fourthuttonActionPerformed(evt);
+                compraBotonActionPerformed(evt);
             }
         });
-        fourtpanel.add(fourthutton);
+        fourtpanel.add(compraBoton);
 
         fourthutton1.setBackground(new java.awt.Color(51, 255, 0));
         fourthutton1.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
@@ -136,10 +160,10 @@ public class PlaymobilGuerrero extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, firstPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(firstPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(fourtpanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(thirdPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(secondPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(secondPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(thridPanel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
+            .addComponent(fourtpanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         firstPanelLayout.setVerticalGroup(
             firstPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -147,44 +171,28 @@ public class PlaymobilGuerrero extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(secondPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(thirdPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 604, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(thridPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(fourtpanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(fourtpanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(firstPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(firstPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(firstPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(firstPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    /**
-     * Método para llevar al usuario al método de rellenar el formulario para realizar la compra del producto
-     * @param evt 
-     */
-    private void fourthuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fourthuttonActionPerformed
-
-        Formulario f = new Formulario();
-        
-        this.setVisible(false);
-        f.setVisible(true);
-        
-    }//GEN-LAST:event_fourthuttonActionPerformed
 
     /**
      * Método que contedrá el método para volver un paso atrás en la aplicación
@@ -198,22 +206,17 @@ public class PlaymobilGuerrero extends javax.swing.JFrame {
         p.setVisible(true);
     }//GEN-LAST:event_fourthutton1ActionPerformed
 
-    /**
-     * Método que contendrá el sonido cuando clickemos sobre el botón de comprar
-     * @param evt 
-     */
-    private void fourthuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fourthuttonMouseClicked
-        
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/DINERO.wav"));
-        Sound.play();
-        
-    }//GEN-LAST:event_fourthuttonMouseClicked
-
     private void fifthButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fifthButtonActionPerformed
 
         System.exit(0);
     }//GEN-LAST:event_fifthButtonActionPerformed
+
+    private void compraBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_compraBotonActionPerformed
+
+        Formulario f = new Formulario();
+        this.setVisible(false);
+        f.setVisible(true);
+    }//GEN-LAST:event_compraBotonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -251,19 +254,21 @@ public class PlaymobilGuerrero extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton compraBoton;
     private javax.swing.JButton fifthButton;
-    private javax.swing.JLabel fifthLabel;
+    private javax.swing.JLabel firstLabel;
     private javax.swing.JLabel firstLabel1;
     private javax.swing.JPanel firstPanel;
     private javax.swing.JLabel fourthLabel;
     private javax.swing.JPanel fourthPanel;
-    private javax.swing.JButton fourthutton;
     private javax.swing.JButton fourthutton1;
     private javax.swing.JPanel fourtpanel;
+    private javax.swing.JLabel secondLabel;
     private javax.swing.JLabel secondLabel1;
     private javax.swing.JPanel secondPanel;
-    private javax.swing.JLabel sixthLabel;
     private javax.swing.JLabel thirdLabel;
-    private javax.swing.JPanel thirdPanel;
+    private javax.swing.JPanel thirdPanel1;
+    private javax.swing.JPanel thirdPanel2;
+    private javax.swing.JPanel thridPanel;
     // End of variables declaration//GEN-END:variables
 }

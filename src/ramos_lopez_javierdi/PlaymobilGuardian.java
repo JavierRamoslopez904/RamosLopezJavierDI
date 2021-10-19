@@ -31,6 +31,7 @@ public class PlaymobilGuardian extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel4 = new javax.swing.JLabel();
         firstPanel = new javax.swing.JPanel();
         secondPanel = new javax.swing.JPanel();
         firstLabel1 = new javax.swing.JLabel();
@@ -41,9 +42,11 @@ public class PlaymobilGuardian extends javax.swing.JFrame {
         fifthLabel = new javax.swing.JLabel();
         sixthLabel = new javax.swing.JLabel();
         fourthPanel = new javax.swing.JPanel();
-        fourthutton = new javax.swing.JButton();
+        compraBoton = new javax.swing.JButton();
         fourthutton1 = new javax.swing.JButton();
         fifthButton = new javax.swing.JButton();
+
+        jLabel4.setText("jLabel4");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -64,44 +67,39 @@ public class PlaymobilGuardian extends javax.swing.JFrame {
         thirdPanel.setLayout(new java.awt.GridLayout(4, 1));
 
         thirdLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        thirdLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/guardian-removebg-preview (1) (1) (1).png"))); // NOI18N
+        thirdLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/guardianuco-removebg-preview (1).png"))); // NOI18N
         thirdPanel.add(thirdLabel);
 
-        fourthLabel.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        fourthLabel.setFont(new java.awt.Font("Source Code Pro Black", 1, 48)); // NOI18N
         fourthLabel.setForeground(new java.awt.Color(0, 0, 102));
         fourthLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        fourthLabel.setText("PRECIO : 19.99€");
+        fourthLabel.setText("Precio : 65.99€");
         thirdPanel.add(fourthLabel);
 
-        fifthLabel.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        fifthLabel.setFont(new java.awt.Font("Source Code Pro Black", 1, 48)); // NOI18N
         fifthLabel.setForeground(new java.awt.Color(0, 0, 102));
         fifthLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        fifthLabel.setText("DESCRIPCIÓN  : Guardián de la ciudadela");
+        fifthLabel.setText("Descripción : Guardián");
         thirdPanel.add(fifthLabel);
 
-        sixthLabel.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        sixthLabel.setFont(new java.awt.Font("Source Code Pro Black", 1, 48)); // NOI18N
         sixthLabel.setForeground(new java.awt.Color(0, 0, 102));
         sixthLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        sixthLabel.setText("UNIDADES : 2");
+        sixthLabel.setText("Nombre : Playmobil Guardián");
         thirdPanel.add(sixthLabel);
 
         fourthPanel.setBackground(new java.awt.Color(255, 255, 0));
 
-        fourthutton.setBackground(new java.awt.Color(51, 255, 0));
-        fourthutton.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
-        fourthutton.setForeground(new java.awt.Color(0, 0, 102));
-        fourthutton.setText("COMPRAR");
-        fourthutton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                fourthuttonMouseClicked(evt);
-            }
-        });
-        fourthutton.addActionListener(new java.awt.event.ActionListener() {
+        compraBoton.setBackground(new java.awt.Color(51, 255, 0));
+        compraBoton.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        compraBoton.setForeground(new java.awt.Color(0, 0, 102));
+        compraBoton.setText("COMPRAR");
+        compraBoton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fourthuttonActionPerformed(evt);
+                compraBotonActionPerformed(evt);
             }
         });
-        fourthPanel.add(fourthutton);
+        fourthPanel.add(compraBoton);
 
         fourthutton1.setBackground(new java.awt.Color(51, 255, 0));
         fourthutton1.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
@@ -132,8 +130,8 @@ public class PlaymobilGuardian extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, firstPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(firstPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(thirdPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 957, Short.MAX_VALUE)
                     .addComponent(fourthPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(thirdPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(secondPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -143,10 +141,10 @@ public class PlaymobilGuardian extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(secondPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(thirdPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 547, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(fourthPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(thirdPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(fourthPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -161,26 +159,17 @@ public class PlaymobilGuardian extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(firstPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(firstPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * Método que contiene un evento que nos llevará al formulario para realizar la compra
-     * @param evt 
-     */
-    private void fourthuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fourthuttonActionPerformed
-            
-        Formulario f = new Formulario();
-        
-        this.setVisible(false);
-        f.setVisible(true);
-        
-    }//GEN-LAST:event_fourthuttonActionPerformed
+    private void fifthButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fifthButtonActionPerformed
+
+        System.exit(0);
+    }//GEN-LAST:event_fifthButtonActionPerformed
 
     /**
      * Método que contendrá el botón para que se vuelva atrás en la aplicación
@@ -194,24 +183,14 @@ public class PlaymobilGuardian extends javax.swing.JFrame {
         p.setVisible(true);
     }//GEN-LAST:event_fourthutton1ActionPerformed
 
+    private void compraBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_compraBotonActionPerformed
+
+        Formulario f = new Formulario();
+        this.setVisible(false);
+        f.setVisible(true);
+    }//GEN-LAST:event_compraBotonActionPerformed
+
   
-    /**
-     * Método que contendrá el sonido cuando clickemos sobre el botón de comprar
-     * @param evt 
-     */
-    private void fourthuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fourthuttonMouseClicked
-        
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/DINERO.wav"));
-        Sound.play();
-        
-    }//GEN-LAST:event_fourthuttonMouseClicked
-
-    private void fifthButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fifthButtonActionPerformed
-
-        System.exit(0);
-    }//GEN-LAST:event_fifthButtonActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -248,14 +227,15 @@ public class PlaymobilGuardian extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton compraBoton;
     private javax.swing.JButton fifthButton;
     private javax.swing.JLabel fifthLabel;
     private javax.swing.JLabel firstLabel1;
     private javax.swing.JPanel firstPanel;
     private javax.swing.JLabel fourthLabel;
     private javax.swing.JPanel fourthPanel;
-    private javax.swing.JButton fourthutton;
     private javax.swing.JButton fourthutton1;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel secondLabel1;
     private javax.swing.JPanel secondPanel;
     private javax.swing.JLabel sixthLabel;

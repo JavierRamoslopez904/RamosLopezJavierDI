@@ -38,9 +38,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         thirdButton = new javax.swing.JButton();
         fourthButton = new javax.swing.JButton();
         fourthPanel = new javax.swing.JPanel();
-        fifthButton = new javax.swing.JButton();
         sixthButton = new javax.swing.JButton();
-        seventhButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -128,15 +126,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         fourthPanel.setBackground(new java.awt.Color(255, 255, 0));
 
-        fifthButton.setBackground(new java.awt.Color(255, 255, 0));
-        fifthButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/telefono__1_-removebg-preview (2)_1.png"))); // NOI18N
-        fifthButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fifthButtonActionPerformed(evt);
-            }
-        });
-        fourthPanel.add(fifthButton);
-
         sixthButton.setBackground(new java.awt.Color(0, 255, 0));
         sixthButton.setFont(new java.awt.Font("Source Code Pro", 1, 24)); // NOI18N
         sixthButton.setForeground(new java.awt.Color(0, 0, 153));
@@ -147,15 +136,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
         fourthPanel.add(sixthButton);
-
-        seventhButton.setBackground(new java.awt.Color(255, 255, 0));
-        seventhButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/google (1).png"))); // NOI18N
-        seventhButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                seventhButtonActionPerformed(evt);
-            }
-        });
-        fourthPanel.add(seventhButton);
 
         javax.swing.GroupLayout firstPanelLayout = new javax.swing.GroupLayout(firstPanel);
         firstPanel.setLayout(firstPanelLayout);
@@ -174,7 +154,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             .addGroup(firstPanelLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addComponent(secondPaneñ, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
                 .addComponent(thirdPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(fourthPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -231,9 +211,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
      */
     private void secondButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_secondButtonMouseClicked
         
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/playmobil.wav"));
-        Sound.play();
+       AudioClip Sound;
+       Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/playmobil.wav"));
+       Sound.play();
         
         Playmobil p = new Playmobil(this,true);
         
@@ -289,30 +269,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_sixthButtonActionPerformed
 
     /**
-     * Método que va a tener un botón, el cual contendrá el sonido de un teléfono marcando
-     * @param evt 
-     */
-    private void fifthButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fifthButtonActionPerformed
-       
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/telefono.wav"));
-        Sound.play();
-        
-    }//GEN-LAST:event_fifthButtonActionPerformed
-
-    /**
-     * Método que va a tener un botón, el cual contendrá un sonido de sorpresa
-     * @param evt 
-     */
-    private void seventhButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seventhButtonActionPerformed
-        
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/sorpresa.wav"));
-        Sound.play();
-        
-    }//GEN-LAST:event_seventhButtonActionPerformed
-
-    /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
@@ -348,7 +304,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton fifthButton;
     private javax.swing.JButton firstButton;
     private javax.swing.JLabel firstImage;
     private javax.swing.JPanel firstPanel;
@@ -358,7 +313,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton secondButton;
     private javax.swing.JLabel secondImage;
     private javax.swing.JPanel secondPaneñ;
-    private javax.swing.JButton seventhButton;
     private javax.swing.JButton sixthButton;
     private javax.swing.JButton thirdButton;
     private javax.swing.JLabel thirdImage;

@@ -37,9 +37,9 @@ public class More extends javax.swing.JDialog {
         firstLabel1 = new javax.swing.JLabel();
         secondLabel1 = new javax.swing.JLabel();
         thirdPanel = new javax.swing.JPanel();
-        thirdLabel = new javax.swing.JLabel();
+        thirdButton = new javax.swing.JButton();
         firstButton = new javax.swing.JButton();
-        fourthLabel = new javax.swing.JLabel();
+        fourthButton = new javax.swing.JButton();
         secondButton = new javax.swing.JButton();
         fourthPanel = new javax.swing.JPanel();
         fourthutton = new javax.swing.JButton();
@@ -63,9 +63,14 @@ public class More extends javax.swing.JDialog {
         thirdPanel.setBackground(new java.awt.Color(255, 255, 0));
         thirdPanel.setLayout(new java.awt.GridLayout(2, 2));
 
-        thirdLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        thirdLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/legolas-removebg-preview (1).png"))); // NOI18N
-        thirdPanel.add(thirdLabel);
+        thirdButton.setBackground(new java.awt.Color(255, 255, 0));
+        thirdButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/legolas-removebg-preview (1).png"))); // NOI18N
+        thirdButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                thirdButtonActionPerformed(evt);
+            }
+        });
+        thirdPanel.add(thirdButton);
 
         firstButton.setBackground(new java.awt.Color(255, 255, 255));
         firstButton.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
@@ -83,9 +88,14 @@ public class More extends javax.swing.JDialog {
         });
         thirdPanel.add(firstButton);
 
-        fourthLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        fourthLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/spiderman-removebg-preview (1).png"))); // NOI18N
-        thirdPanel.add(fourthLabel);
+        fourthButton.setBackground(new java.awt.Color(255, 255, 0));
+        fourthButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/spiderman-removebg-preview (1).png"))); // NOI18N
+        fourthButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fourthButtonActionPerformed(evt);
+            }
+        });
+        thirdPanel.add(fourthButton);
 
         secondButton.setBackground(new java.awt.Color(255, 255, 255));
         secondButton.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
@@ -186,10 +196,13 @@ public class More extends javax.swing.JDialog {
      */
     private void firstButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstButtonActionPerformed
 
-         Legolas l = new Legolas();
-         
+         Formulario f = new Formulario();
          this.setVisible(false);
-         l.setVisible(true);
+         f.setVisible(true);
+       
+        AudioClip Sound;
+        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/DINERO.wav"));
+        Sound.play();
 
     }//GEN-LAST:event_firstButtonActionPerformed
 
@@ -199,10 +212,13 @@ public class More extends javax.swing.JDialog {
      */
     private void secondButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_secondButtonActionPerformed
         
-        Spiderman s = new Spiderman();
-        
+        Formulario f = new Formulario();
         this.setVisible(false);
-        s.setVisible(true);
+        f.setVisible(true);
+       
+        AudioClip Sound;
+        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/DINERO.wav"));
+        Sound.play();
         
     }//GEN-LAST:event_secondButtonActionPerformed
 
@@ -212,9 +228,7 @@ public class More extends javax.swing.JDialog {
      */
     private void firstButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_firstButtonMouseClicked
         
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/aparicion.wav"));
-        Sound.play();
+        
         
     }//GEN-LAST:event_firstButtonMouseClicked
 
@@ -224,16 +238,35 @@ public class More extends javax.swing.JDialog {
      */
     private void secondButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_secondButtonMouseClicked
         
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/aparicion.wav"));
-        Sound.play();
-        
+      
     }//GEN-LAST:event_secondButtonMouseClicked
 
     private void fifthButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fifthButtonActionPerformed
 
         System.exit(0);
     }//GEN-LAST:event_fifthButtonActionPerformed
+
+    private void thirdButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_thirdButtonActionPerformed
+        Legolas l = new Legolas();
+        this.setVisible(false);
+        l.setVisible(true);
+        
+        AudioClip Sound;
+        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/aparicion.wav"));
+        Sound.play();
+    }//GEN-LAST:event_thirdButtonActionPerformed
+
+    private void fourthButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fourthButtonActionPerformed
+        
+        Spiderman s = new Spiderman();
+        this.setVisible(false);
+        s.setVisible(true);
+        
+        AudioClip Sound;
+        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/aparicion.wav"));
+        Sound.play();
+        
+    }//GEN-LAST:event_fourthButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -282,13 +315,13 @@ public class More extends javax.swing.JDialog {
     private javax.swing.JButton firstButton;
     private javax.swing.JLabel firstLabel1;
     private javax.swing.JPanel firstPanel;
-    private javax.swing.JLabel fourthLabel;
+    private javax.swing.JButton fourthButton;
     private javax.swing.JPanel fourthPanel;
     private javax.swing.JButton fourthutton;
     private javax.swing.JButton secondButton;
     private javax.swing.JLabel secondLabel1;
     private javax.swing.JPanel secondPanel;
-    private javax.swing.JLabel thirdLabel;
+    private javax.swing.JButton thirdButton;
     private javax.swing.JPanel thirdPanel;
     // End of variables declaration//GEN-END:variables
 }

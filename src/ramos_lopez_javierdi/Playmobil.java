@@ -40,11 +40,11 @@ public class Playmobil extends javax.swing.JDialog {
         thirdPanel1 = new javax.swing.JPanel();
         thirdLabel1 = new javax.swing.JLabel();
         fourthPanel1 = new javax.swing.JPanel();
-        fourthLabel1 = new javax.swing.JLabel();
-        seventhButton1 = new javax.swing.JButton();
-        fifthLabel1 = new javax.swing.JLabel();
+        sixthButton = new javax.swing.JButton();
+        firstButton = new javax.swing.JButton();
+        eigthButton = new javax.swing.JButton();
         ninthButton1 = new javax.swing.JButton();
-        sixthLabel1 = new javax.swing.JLabel();
+        fifthButton = new javax.swing.JButton();
         eigthButton1 = new javax.swing.JButton();
         fifthPanel1 = new javax.swing.JPanel();
         tenthButton = new javax.swing.JButton();
@@ -69,36 +69,41 @@ public class Playmobil extends javax.swing.JDialog {
 
         thirdLabel1.setFont(new java.awt.Font("Source Sans Pro Black", 1, 36)); // NOI18N
         thirdLabel1.setForeground(new java.awt.Color(0, 0, 102));
-        thirdLabel1.setText("PLAYMOBIL");
+        thirdLabel1.setText("¡¡CLICKA SOBRE UN PLAYMOBIL!!");
         thirdPanel1.add(thirdLabel1);
 
         fourthPanel1.setBackground(new java.awt.Color(255, 255, 0));
         fourthPanel1.setLayout(new java.awt.GridLayout(3, 2));
 
-        fourthLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        fourthLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/romanuco-removebg-preview (1).png"))); // NOI18N
-        fourthPanel1.add(fourthLabel1);
-
-        seventhButton1.setBackground(new java.awt.Color(255, 255, 255));
-        seventhButton1.setFont(new java.awt.Font("Source Sans Pro Black", 1, 36)); // NOI18N
-        seventhButton1.setForeground(new java.awt.Color(0, 0, 102));
-        seventhButton1.setText("¡COMPRAR YA!");
-        seventhButton1.setBorder(null);
-        seventhButton1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                seventhButton1MouseClicked(evt);
-            }
-        });
-        seventhButton1.addActionListener(new java.awt.event.ActionListener() {
+        sixthButton.setBackground(new java.awt.Color(255, 255, 0));
+        sixthButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/romanuco-removebg-preview (1).png"))); // NOI18N
+        sixthButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                seventhButton1ActionPerformed(evt);
+                sixthButtonActionPerformed(evt);
             }
         });
-        fourthPanel1.add(seventhButton1);
+        fourthPanel1.add(sixthButton);
 
-        fifthLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        fifthLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/guardianuco-removebg-preview (1).png"))); // NOI18N
-        fourthPanel1.add(fifthLabel1);
+        firstButton.setBackground(new java.awt.Color(255, 255, 255));
+        firstButton.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        firstButton.setForeground(new java.awt.Color(0, 0, 102));
+        firstButton.setText("¡COMPRAR YA!");
+        firstButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                firstButtonActionPerformed(evt);
+            }
+        });
+        fourthPanel1.add(firstButton);
+
+        eigthButton.setBackground(new java.awt.Color(255, 255, 0));
+        eigthButton.setForeground(new java.awt.Color(255, 255, 0));
+        eigthButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/guardianuco-removebg-preview (1).png"))); // NOI18N
+        eigthButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eigthButtonActionPerformed(evt);
+            }
+        });
+        fourthPanel1.add(eigthButton);
 
         ninthButton1.setBackground(new java.awt.Color(255, 255, 255));
         ninthButton1.setFont(new java.awt.Font("Source Sans Pro Black", 1, 36)); // NOI18N
@@ -116,9 +121,14 @@ public class Playmobil extends javax.swing.JDialog {
         });
         fourthPanel1.add(ninthButton1);
 
-        sixthLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        sixthLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/bomba-removebg-preview (2).png"))); // NOI18N
-        fourthPanel1.add(sixthLabel1);
+        fifthButton.setBackground(new java.awt.Color(255, 255, 0));
+        fifthButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/bomba-removebg-preview (2).png"))); // NOI18N
+        fifthButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fifthButtonActionPerformed(evt);
+            }
+        });
+        fourthPanel1.add(fifthButton);
 
         eigthButton1.setBackground(new java.awt.Color(255, 255, 255));
         eigthButton1.setFont(new java.awt.Font("Source Sans Pro Black", 1, 36)); // NOI18N
@@ -208,19 +218,6 @@ public class Playmobil extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     /**
-     * Método que contendrá el evento que nos mandará hacia la página de PlaymobilGuerrero
-     * @param evt 
-     */
-    private void seventhButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seventhButton1ActionPerformed
-       
-       PlaymobilGuerrero pg = new PlaymobilGuerrero();
-       
-       this.setVisible(false);
-       pg.setVisible(true);
-        
-    }//GEN-LAST:event_seventhButton1ActionPerformed
-
-    /**
      * Método que contendrá el evento que haga que la aplicación vuelva un paso atrás
      * @param evt 
      */
@@ -241,10 +238,10 @@ public class Playmobil extends javax.swing.JDialog {
      */
     private void ninthButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ninthButton1ActionPerformed
         
-        PlaymobilGuardian pg = new PlaymobilGuardian();
+        Formulario f = new Formulario();
         
         this.setVisible(false);
-        pg.setVisible(true);
+        f.setVisible(true);
         
     }//GEN-LAST:event_ninthButton1ActionPerformed
 
@@ -254,24 +251,13 @@ public class Playmobil extends javax.swing.JDialog {
      */
     private void eigthButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eigthButton1ActionPerformed
         
-        PlaymobilBombero pb = new PlaymobilBombero();
+        Formulario f = new Formulario();
         
         this.setVisible(false);
-        pb.setVisible(true);
+        f.setVisible(true);
+        
         
     }//GEN-LAST:event_eigthButton1ActionPerformed
-
-    /**
-     * Método que contendrá el sonido cuando clickemos sobre el botón ded comprar
-     * @param evt 
-     */
-    private void seventhButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seventhButton1MouseClicked
-
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/aparicion.wav"));
-        Sound.play();
-
-    }//GEN-LAST:event_seventhButton1MouseClicked
 
     /**
      * Método que contendrá el sonido cuando clickemos sobre el botón de comprar
@@ -280,7 +266,7 @@ public class Playmobil extends javax.swing.JDialog {
     private void ninthButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ninthButton1MouseClicked
          
         AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/aparicion.wav"));
+        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/DINERO.wav"));
         Sound.play();
         
     }//GEN-LAST:event_ninthButton1MouseClicked
@@ -290,9 +276,9 @@ public class Playmobil extends javax.swing.JDialog {
      * @param evt 
      */
     private void eigthButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eigthButton1MouseClicked
-
+        
         AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/aparicion.wav"));
+        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/DINERO.wav"));
         Sound.play();
         
     }//GEN-LAST:event_eigthButton1MouseClicked
@@ -302,6 +288,59 @@ public class Playmobil extends javax.swing.JDialog {
         System.exit(0);
         
     }//GEN-LAST:event_tenthButton1ActionPerformed
+
+    private void sixthButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sixthButtonActionPerformed
+        
+        AudioClip Sound;
+        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/aparicion.wav"));
+        Sound.play();
+        
+        PlaymobilGuerrero pg = new PlaymobilGuerrero();
+        
+        this.setVisible(false);
+        pg.setVisible(true);
+        
+    }//GEN-LAST:event_sixthButtonActionPerformed
+
+    private void eigthButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eigthButtonActionPerformed
+        
+        
+        AudioClip Sound;
+        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/aparicion.wav"));
+        Sound.play();
+        
+        PlaymobilGuardian pg = new PlaymobilGuardian();
+        
+        this.setVisible(false);
+        pg.setVisible(true);
+        
+    }//GEN-LAST:event_eigthButtonActionPerformed
+
+    private void fifthButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fifthButtonActionPerformed
+        
+        AudioClip Sound;
+        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/aparicion.wav"));
+        Sound.play();
+        
+        PlaymobilBombero pb = new PlaymobilBombero();
+        
+        this.setVisible(false);
+        pb.setVisible(true);
+        
+    }//GEN-LAST:event_fifthButtonActionPerformed
+
+    private void firstButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstButtonActionPerformed
+        
+        AudioClip Sound;
+        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/DINERO.wav"));
+        Sound.play();
+        
+        Formulario f = new Formulario();
+        
+        this.setVisible(false);
+        f.setVisible(true);
+        
+    }//GEN-LAST:event_firstButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -346,18 +385,18 @@ public class Playmobil extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton eigthButton;
     private javax.swing.JButton eigthButton1;
-    private javax.swing.JLabel fifthLabel1;
+    private javax.swing.JButton fifthButton;
     private javax.swing.JPanel fifthPanel1;
+    private javax.swing.JButton firstButton;
     private javax.swing.JLabel firstLabel1;
     private javax.swing.JPanel firstPanel1;
-    private javax.swing.JLabel fourthLabel1;
     private javax.swing.JPanel fourthPanel1;
     private javax.swing.JButton ninthButton1;
     private javax.swing.JLabel secondLabel1;
     private javax.swing.JPanel secondPanel1;
-    private javax.swing.JButton seventhButton1;
-    private javax.swing.JLabel sixthLabel1;
+    private javax.swing.JButton sixthButton;
     private javax.swing.JButton tenthButton;
     private javax.swing.JButton tenthButton1;
     private javax.swing.JLabel thirdLabel1;

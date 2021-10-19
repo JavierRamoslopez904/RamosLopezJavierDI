@@ -39,12 +39,12 @@ public class Lego extends javax.swing.JDialog {
         thirdPanel = new javax.swing.JPanel();
         thirdLabel1 = new javax.swing.JLabel();
         fourthPanel = new javax.swing.JPanel();
-        firstLabel = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        firstButton = new javax.swing.JButton();
+        secondButton = new javax.swing.JButton();
+        thirdButton = new javax.swing.JButton();
+        fourthButton = new javax.swing.JButton();
+        sixthButton = new javax.swing.JButton();
+        seventhButton = new javax.swing.JButton();
         fifthPanel = new javax.swing.JPanel();
         fourthutton = new javax.swing.JButton();
         fifthButton = new javax.swing.JButton();
@@ -68,71 +68,86 @@ public class Lego extends javax.swing.JDialog {
 
         thirdLabel1.setFont(new java.awt.Font("Source Sans Pro Black", 1, 36)); // NOI18N
         thirdLabel1.setForeground(new java.awt.Color(0, 0, 102));
-        thirdLabel1.setText("LEGO");
+        thirdLabel1.setText("¡¡CLICKA SOBRE UN LEGO!!");
         thirdPanel.add(thirdLabel1);
 
         fourthPanel.setBackground(new java.awt.Color(255, 255, 0));
         fourthPanel.setLayout(new java.awt.GridLayout(3, 2));
 
-        firstLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        firstLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Messi (2) (1).png"))); // NOI18N
-        fourthPanel.add(firstLabel);
-
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 102));
-        jButton1.setText("¡COMPRAR YA!");
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton1MouseClicked(evt);
-            }
-        });
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        firstButton.setBackground(new java.awt.Color(255, 255, 0));
+        firstButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Messi (2) (1).png"))); // NOI18N
+        firstButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                firstButtonActionPerformed(evt);
             }
         });
-        fourthPanel.add(jButton1);
+        fourthPanel.add(firstButton);
 
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/karakk-removebg-preview (1).png"))); // NOI18N
-        fourthPanel.add(jLabel2);
-
-        jButton2.setBackground(new java.awt.Color(255, 255, 255));
-        jButton2.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 0, 102));
-        jButton2.setText("¡COMPRAR YA!");
-        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+        secondButton.setBackground(new java.awt.Color(255, 255, 255));
+        secondButton.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        secondButton.setForeground(new java.awt.Color(0, 0, 102));
+        secondButton.setText("¡COMPRAR YA!");
+        secondButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton2MouseClicked(evt);
+                secondButtonMouseClicked(evt);
             }
         });
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        secondButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                secondButtonActionPerformed(evt);
             }
         });
-        fourthPanel.add(jButton2);
+        fourthPanel.add(secondButton);
 
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ele-removebg-preview (1).png"))); // NOI18N
-        fourthPanel.add(jLabel3);
+        thirdButton.setBackground(new java.awt.Color(255, 255, 0));
+        thirdButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/karakk-removebg-preview (1).png"))); // NOI18N
+        thirdButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                thirdButtonActionPerformed(evt);
+            }
+        });
+        fourthPanel.add(thirdButton);
 
-        jButton3.setBackground(new java.awt.Color(255, 255, 255));
-        jButton3.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(0, 0, 102));
-        jButton3.setText("¡COMPRAR YA!");
-        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+        fourthButton.setBackground(new java.awt.Color(255, 255, 255));
+        fourthButton.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        fourthButton.setForeground(new java.awt.Color(0, 0, 102));
+        fourthButton.setText("¡COMPRAR YA!");
+        fourthButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton3MouseClicked(evt);
+                fourthButtonMouseClicked(evt);
             }
         });
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        fourthButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                fourthButtonActionPerformed(evt);
             }
         });
-        fourthPanel.add(jButton3);
+        fourthPanel.add(fourthButton);
+
+        sixthButton.setBackground(new java.awt.Color(255, 255, 0));
+        sixthButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ele-removebg-preview (1).png"))); // NOI18N
+        sixthButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sixthButtonActionPerformed(evt);
+            }
+        });
+        fourthPanel.add(sixthButton);
+
+        seventhButton.setBackground(new java.awt.Color(255, 255, 255));
+        seventhButton.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        seventhButton.setForeground(new java.awt.Color(0, 0, 102));
+        seventhButton.setText("¡COMPRAR YA!");
+        seventhButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                seventhButtonMouseClicked(evt);
+            }
+        });
+        seventhButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seventhButtonActionPerformed(evt);
+            }
+        });
+        fourthPanel.add(seventhButton);
 
         fifthPanel.setBackground(new java.awt.Color(255, 255, 0));
 
@@ -204,25 +219,20 @@ public class Lego extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * Método para acceder a la figura de karate
-     * @param evt 
-     */
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void fourthButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fourthButtonActionPerformed
         
-        LegoKarate lk = new LegoKarate();
-        
+        Formulario f = new Formulario();
         this.setVisible(false);
-        lk.setVisible(true);
+        f.setVisible(true);
+        
+        AudioClip Sound;
+        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/DINERO.wav"));
+        Sound.play();
         
         
         
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_fourthButtonActionPerformed
 
-    /**
-     * Método que contendrá el evento para volver a la página principal
-     * @param evt 
-     */
     private void fourthuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fourthuttonActionPerformed
         
         VentanaPrincipal vp = new VentanaPrincipal();
@@ -232,72 +242,86 @@ public class Lego extends javax.swing.JDialog {
         
     }//GEN-LAST:event_fourthuttonActionPerformed
 
-    /**
-     * Método para acceder a comprar el juguete LEGO futbolista
-     * @param evt 
-     */
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void secondButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_secondButtonActionPerformed
         
-        LegoFutbolista lf = new LegoFutbolista();
-        
+        Formulario f = new Formulario();
         this.setVisible(false);
-        lf.setVisible(true);
+        f.setVisible(true);
         
-    }//GEN-LAST:event_jButton1ActionPerformed
+        AudioClip Sound;
+        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/DINERO.wav"));
+        Sound.play();
+        
+    }//GEN-LAST:event_secondButtonActionPerformed
 
-    /**
-     * Método para acceder a comprar el juguete LEGO electricista
-     * @param evt 
-     */
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        
-        LegoElectricista le = new LegoElectricista();
-        
+    private void seventhButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seventhButtonActionPerformed
+         Formulario f = new Formulario();
         this.setVisible(false);
-        le.setVisible(true);
-        
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    /**
-     * Método que contendrá el sonido cuando clickemos sobre el botón de comprar
-     * @param evt 
-     */
-    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/aparicion.wav"));
-        Sound.play();
-
-    }//GEN-LAST:event_jButton1MouseClicked
-
-    /**
-     * Método que contendrá el sonido cuando clickemos sobre el botón de comprar
-     * @param evt 
-     */
-    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+        f.setVisible(true);
         
         AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/aparicion.wav"));
+        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/DINERO.wav"));
         Sound.play();
         
-    }//GEN-LAST:event_jButton2MouseClicked
+    }//GEN-LAST:event_seventhButtonActionPerformed
 
-    /**
-     * Método que contendrá el sonido cuando clickemos sobre el botón de comprar
-     * @param evt 
-     */
-    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+    private void secondButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_secondButtonMouseClicked
+
+    
+    }//GEN-LAST:event_secondButtonMouseClicked
+
+    private void fourthButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fourthButtonMouseClicked
         
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/aparicion.wav"));
-        Sound.play();
+       
         
-    }//GEN-LAST:event_jButton3MouseClicked
+    }//GEN-LAST:event_fourthButtonMouseClicked
+
+    private void seventhButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seventhButtonMouseClicked
+        
+        
+        
+    }//GEN-LAST:event_seventhButtonMouseClicked
 
     private void fifthButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fifthButtonActionPerformed
 
         System.exit(0);
     }//GEN-LAST:event_fifthButtonActionPerformed
+
+    private void firstButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstButtonActionPerformed
+
+        LegoFutbolista lf = new LegoFutbolista();
+        this.setVisible(false);
+        lf.setVisible(true);
+        
+        AudioClip Sound;
+        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/aparicion.wav"));
+        Sound.play();        
+        
+    }//GEN-LAST:event_firstButtonActionPerformed
+
+    private void thirdButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_thirdButtonActionPerformed
+        
+        LegoKarate lk = new LegoKarate();
+        this.setVisible(false);
+        lk.setVisible(true);
+        
+        AudioClip Sound;
+        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/aparicion.wav"));
+        Sound.play(); 
+       
+    }//GEN-LAST:event_thirdButtonActionPerformed
+
+    private void sixthButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sixthButtonActionPerformed
+       
+        LegoElectricista le = new LegoElectricista();
+        this.setVisible(false);
+        le.setVisible(true);
+        
+        AudioClip Sound;
+        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/aparicion.wav"));
+        Sound.play(); 
+        
+    }//GEN-LAST:event_sixthButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -344,18 +368,18 @@ public class Lego extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton fifthButton;
     private javax.swing.JPanel fifthPanel;
-    private javax.swing.JLabel firstLabel;
+    private javax.swing.JButton firstButton;
     private javax.swing.JLabel firstLabel1;
     private javax.swing.JPanel firstPanel;
+    private javax.swing.JButton fourthButton;
     private javax.swing.JPanel fourthPanel;
     private javax.swing.JButton fourthutton;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JButton secondButton;
     private javax.swing.JLabel secondLabel1;
     private javax.swing.JPanel secondPanel;
+    private javax.swing.JButton seventhButton;
+    private javax.swing.JButton sixthButton;
+    private javax.swing.JButton thirdButton;
     private javax.swing.JLabel thirdLabel1;
     private javax.swing.JPanel thirdPanel;
     // End of variables declaration//GEN-END:variables

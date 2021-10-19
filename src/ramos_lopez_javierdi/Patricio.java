@@ -41,7 +41,7 @@ public class Patricio extends javax.swing.JFrame {
         fifthLabel = new javax.swing.JLabel();
         sixthLabel = new javax.swing.JLabel();
         fourthPanel = new javax.swing.JPanel();
-        fourthutton = new javax.swing.JButton();
+        compraBoton = new javax.swing.JButton();
         fourthutton1 = new javax.swing.JButton();
         fifthButton = new javax.swing.JButton();
 
@@ -87,21 +87,16 @@ public class Patricio extends javax.swing.JFrame {
 
         fourthPanel.setBackground(new java.awt.Color(255, 255, 0));
 
-        fourthutton.setBackground(new java.awt.Color(51, 255, 0));
-        fourthutton.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
-        fourthutton.setForeground(new java.awt.Color(0, 0, 102));
-        fourthutton.setText("COMPRAR");
-        fourthutton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                fourthuttonMouseClicked(evt);
-            }
-        });
-        fourthutton.addActionListener(new java.awt.event.ActionListener() {
+        compraBoton.setBackground(new java.awt.Color(51, 255, 0));
+        compraBoton.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
+        compraBoton.setForeground(new java.awt.Color(0, 0, 102));
+        compraBoton.setText("COMPRAR");
+        compraBoton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fourthuttonActionPerformed(evt);
+                compraBotonActionPerformed(evt);
             }
         });
-        fourthPanel.add(fourthutton);
+        fourthPanel.add(compraBoton);
 
         fourthutton1.setBackground(new java.awt.Color(51, 255, 0));
         fourthutton1.setFont(new java.awt.Font("Source Code Pro Black", 1, 36)); // NOI18N
@@ -168,19 +163,6 @@ public class Patricio extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * Método que contendrá el botón de comprar y nos llevará a la página para realizar la compra
-     * @param evt 
-     */
-    private void fourthuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fourthuttonActionPerformed
-
-        Formulario f = new Formulario();
-        
-        this.setVisible(false);
-        f.setVisible(true);
-        
-    }//GEN-LAST:event_fourthuttonActionPerformed
-
     private void fourthutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fourthutton1ActionPerformed
 
         Bob b = new Bob(this,true);
@@ -189,22 +171,17 @@ public class Patricio extends javax.swing.JFrame {
         b.setVisible(true);
     }//GEN-LAST:event_fourthutton1ActionPerformed
 
-    /**
-     * Método que contendrá el sonido cuando clickemos sobre el botón de comprar
-     * @param evt 
-     */
-    private void fourthuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fourthuttonMouseClicked
-        
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/audios/DINERO.wav"));
-        Sound.play();
-        
-    }//GEN-LAST:event_fourthuttonMouseClicked
-
     private void fifthButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fifthButtonActionPerformed
 
         System.exit(0);
     }//GEN-LAST:event_fifthButtonActionPerformed
+
+    private void compraBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_compraBotonActionPerformed
+
+        Formulario f = new Formulario();
+        this.setVisible(false);
+        f.setVisible(true);
+    }//GEN-LAST:event_compraBotonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -242,13 +219,13 @@ public class Patricio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton compraBoton;
     private javax.swing.JButton fifthButton;
     private javax.swing.JLabel fifthLabel;
     private javax.swing.JLabel firstLabel1;
     private javax.swing.JPanel firstPanel;
     private javax.swing.JLabel fourthLabel;
     private javax.swing.JPanel fourthPanel;
-    private javax.swing.JButton fourthutton;
     private javax.swing.JButton fourthutton1;
     private javax.swing.JLabel secondLabel1;
     private javax.swing.JPanel secondPanel;
